@@ -5,7 +5,7 @@ import "./Movie.css"
 
 function Movie({ id, year, title, summary, poster, genres }){
     return (
-        <Link 
+        <Link
             to={{
                 pathname: `/movie/${id}`,
                 state: {
@@ -16,6 +16,7 @@ function Movie({ id, year, title, summary, poster, genres }){
                     genres
                 }
             }}
+            style={{ textDecoration: 'none' }}
         >
         <div className="movie">
             <img src={poster} alt={title} title={title}/>
