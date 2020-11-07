@@ -1,7 +1,11 @@
 import React from "react";
 
 function About(){
-    return <span>About this page: I built it because I love Movies</span>;
+    return (
+        <React.Fragment>
+            <h1>About this Page</h1>
+        </React.Fragment>
+    );
 }
 
 export default About;
